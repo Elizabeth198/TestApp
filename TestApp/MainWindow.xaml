@@ -1,0 +1,27 @@
+﻿<Window x:Class="TestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF989587">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame x:Name="RootFrame" Grid.Column="0" Grid.Row="1" NavigationUIVisibility="Hidden" LoadCompleted="LoadedFrame_LoadCompleted"></Frame>
+        <StackPanel>
+            <Menu Background="#FF94948A" Height="30" BorderBrush="White" BorderThickness="2" >
+                <MenuItem Header="Справочники" FontStyle="Italic" Click="aa_click"  FontSize="14"></MenuItem>
+                <MenuItem Header="Справочники" FontStyle="Italic" FontSize="14"></MenuItem>
+                <MenuItem Header="выход" Click="Close_Click" FontStyle="Italic" FontSize="14"></MenuItem>
+            </Menu>
+        </StackPanel>
+      
+    </Grid>
+</Window>
